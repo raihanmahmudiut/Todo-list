@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="app.css" />
+		<title>ToDo List</title>
+	</head>
+	<body class="grid-container">
+		<div class="userContainer" id="menu-container">
+			<ul class="userList" id="user-list" role="listview">
+				<li>Mark</li>
+				<li>Tomal</li>
+				<li>Tishad</li>
+			</ul>
+		</div>
+		<header class="header" id="header">To-do List</header>
+
+		<div class="todo-container" id="todoContainer">
+			<div class="input-field">
+				<input
+					type="text"
+					placeholder="Add a new task"
+					autocomplete="off"
+					id="taskInput"
+				/>
+				<button type="button" id="addTask" name="addTask">Add Task</button>
+			</div>
+
+			<div id="taskList" class="task-list"></div>
+			<button type="button" id="clearCompleted">Clear completed tasks</button>
+		</div>
+		<div class="task-discussion">Task discussion forum</div>
+		<footer class="footer" id="footer">Footer</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
